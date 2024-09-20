@@ -8,13 +8,16 @@
     display: grid;
     height: 100vh;
     grid-template-columns:1fr 5fr;
-    grid-template-rows: 1fr 5fr;
+    grid-template-rows: 1fr 8fr;
    
 }   
 
 .header {
     background-color: rgb(236, 216, 189);
     grid-area: 1 / 2 / 2 / 3;
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    
 }
 
 .sidebar {
@@ -24,7 +27,7 @@
 }
 
 .main {
-    background-color: rgb(168, 253, 198);
+    background-color: rgb(178, 250, 160);
 }
 
 div.title {
@@ -35,15 +38,9 @@ div.title {
     padding-top: 20px;
 }
 
-div.navigation {
+div.navigation, div.link {
     display: flex;
-    gap: 15px;
-    flex-direction: column;
-}
-
-div.link {
-    display: flex;
-    gap: 15px;
+    gap: 30px;
     flex-direction: column;
 }
 
@@ -52,4 +49,66 @@ button.nav {
     color: rgb(236, 216, 189);
     border: none;
     font-size: 24px;
+    border-radius: 6px;
+}
+
+div.topRow {
+    display: flex;
+    align-items: center;
+    gap: 30px 
+}
+
+input.search {
+    background-color: rgb(236, 216, 189);
+    width: 65%;
+    margin-left: 20px;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 16px;
+    border: 3px solid rgb(236, 185, 119);
+}
+
+input.search:focus {
+    background-color: rgb(236, 216, 189);
+    border: 3px solid rgb(236, 185, 119);
+    outline: none;
+}
+
+div.name {
+    font-size: 24px;
+    
+}
+
+input.search, div.name {
+    color: rgb(41, 124, 77);
+    margin-top: 15px;
+}
+
+div.botRow {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr 1fr 1fr;
+    align-items: center;
+    gap: 10px;
+    padding: 10px
+}
+
+div.intro {
+    grid-column: 2 / 3;
+    margin-top: 10px;
+}
+
+div.welcome {
+    font-size: 18px;
+    color: rgb(41, 124, 77);
+    font-weight: bold;
+}
+
+div.user {
+    font-size: 30px;
+    color: rgb(41, 124, 77);
+    font-weight: bold;
+}
+
+button#head {
+    max-width: 175px;
 }
