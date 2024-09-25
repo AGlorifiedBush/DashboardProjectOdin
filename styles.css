@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .container {
@@ -40,7 +41,7 @@ div.title {
 
 div.navigation, div.link {
     display: flex;
-    gap: 30px;
+    gap: 20px;
     flex-direction: column;
 }
 
@@ -55,7 +56,7 @@ button.nav {
 div.topRow {
     display: flex;
     align-items: center;
-    gap: 30px 
+    gap: 24px 
 }
 
 input.search {
@@ -111,4 +112,97 @@ div.user {
 
 button#head {
     max-width: 175px;
+}
+
+div.main {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns:  2fr 2fr 1fr ;
+    gap: 15px;
+    padding: 10px;
+    margin: 10px;
+}
+
+h1.section1 {
+    display: flex;
+    align-items: center;
+    color: rgb(41, 124, 77);
+}
+
+h1.section {
+    display: flex;
+    align-items: center;
+    color: rgb(41, 124, 77);
+    font-size: 28px;
+    justify-content: center;
+    border-bottom: 2px dotted rgb(41, 124, 77);;
+}
+
+div.content1 {
+    grid-area: 2 / 1 / 4 / 2;
+}
+
+div.content2 {
+    grid-area: 2 / 2 / 4 / 3;
+}
+
+div.content3 {
+    grid-area: 4 / 1 / 6 / 2;
+}
+
+div.content4 {
+    grid-area: 4 / 2 / 6 / 3;
+}
+
+div.content5 {
+    grid-area: 6 / 1 / 8 / 2;
+}
+
+div.content6 {
+    grid-area: 6 / 2 / 8 / 3
+}
+div#con {
+    background-color: rgb(236, 185, 119, 70%);
+    border-left: 5px solid rgb(41, 124, 77);
+    color: rgb(32, 94, 59);
+    border-radius: 8px;
+}
+
+h2 {
+    padding: 10px;
+}
+
+p.filler {
+    padding: 10px;
+    font-size: 18px;
+}
+
+div.announcements {
+    grid-area: 2 / 3 / 5 / 4;
+    background-color: rgb(236, 185, 119, 70%);
+    color: rgb(32, 94, 59);
+    display: grid;
+}
+
+div.trending {
+    grid-area: 5 / 3 / 8 / 4;
+    background-color: rgb(236, 185, 119, 70%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+h3.info {
+    padding: 15px;
+    font-size: 16px;
+}
+
+p.info {
+ border-bottom: 2px dotted rgb(41, 124, 77);
+ padding: 15px;
+ font-size: 16px;
+}
+
+.prof {
+    color: rgb(32, 94, 59)
 }
