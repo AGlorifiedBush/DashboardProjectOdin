@@ -5,16 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="//code.iconify.design/1/1.0.6/iconify.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
         <div class="header">
            <div class="topRow">
             <input type="text" class="search">
+            <svg class="notification" xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 20 20"><path fill="currentColor" d="M4 8a6 6 0 0 1 4.03-5.67a2 2 0 1 1 3.95 0A6 6 0 0 1 16 8v6l3 2v1H1v-1l3-2zm8 10a2 2 0 1 1-4 0z"/></svg>
+            <img class="prof-tiny" src="https://avatars.fastly.steamstatic.com/80065a8bc68955560fa402aa7685463ac634afa6.jpg">
             <div class="name">Justa Shrub</div>
            </div>
            <div class="botRow">
             <div class="intro">
+                <img class="profile" src="https://avatars.fastly.steamstatic.com/80065a8bc68955560fa402aa7685463ac634afa6.jpg">
                 <div class="welcome">Hello there,</div>
                 <div class="user">Justa Shrub (@BushyBoi)</div>
             </div>
@@ -25,47 +32,87 @@
         </div>
 
         <div class="sidebar">
-            <div class="title">Dashboard</div>
+            <div class="title"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M16 5V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v1a4 4 0 0 0-4 4v11a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9a4 4 0 0 0-4-4m-6-1h4v1h-4zm2 5l2 2l-2 2l-2-2zm6 11H6v-4h2v2h1v-2h9zm0-5H6V9a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2z"/></svg>Dashboard</div>
             <div class="navigation">
-                <button class="nav">Home</button>
-                <button class="nav">Profile</button>
-                <button class="nav">Messages</button>
-                <button class="nav">History</button>
-                <button class="nav">Tasks</button>
-                <button class="nav">Communities</button>
+                <button class="nav"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M10 20v-6h4v6h5v-8h3L12 3L2 12h3v8z"/></svg>
+                    Home</button>
+                <button class="nav">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M12 4a4 4 0 0 1 4 4a4 4 0 0 1-4 4a4 4 0 0 1-4-4a4 4 0 0 1 4-4m0 10c4.42 0 8 1.79 8 4v2H4v-2c0-2.21 3.58-4 8-4"/></svg>
+                     Profile</button>
+                <button class="nav"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 256 256"><path fill="currentColor" d="M232 64v128a16 16 0 0 1-16 16H83l-32.6 28.16l-.09.07A15.9 15.9 0 0 1 40 240a16.05 16.05 0 0 1-6.79-1.52A15.84 15.84 0 0 1 24 224V64a16 16 0 0 1 16-16h176a16 16 0 0 1 16 16"/></svg>
+                     Messages</button>
+                <button class="nav"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" color="currentColor"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2C7.522 2 3.774 4.943 2.5 9H5"/><path d="M12 8v4l2 2M2 12q0 .505.045 1M9 22a10 10 0 0 1-1-.392M3.21 17a11 11 0 0 1-.515-1.154m2.136 3.46q.46.495.977.923"/></g></svg>
+                     History</button>
+                <button class="nav"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 26 26"><path fill="currentColor" d="M7.875 0a1 1 0 0 0-.656.375L3.812 4.656l-2.25-1.5A1.014 1.014 0 1 0 .438 4.844l3 2a1 1 0 0 0 1.344-.219l4-5A1 1 0 0 0 7.875 0M12 3v2h14V3zM7.875 9a1 1 0 0 0-.656.375l-3.407 4.281l-2.25-1.5a1.014 1.014 0 1 0-1.125 1.688l3 2a1 1 0 0 0 1.344-.219l4-5A1 1 0 0 0 7.875 9M12 12v2h14v-2zm-4.125 6a1 1 0 0 0-.656.375l-3.407 4.281l-2.25-1.5a1.014 1.014 0 1 0-1.125 1.688l3 2a1 1 0 0 0 1.344-.219l4-5A1 1 0 0 0 7.875 18M12 21v2h14v-2z"/></svg>
+                     Tasks</button>
+                <button class="nav"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 28 28"><path fill="currentColor" d="M8.5 9.5a3.75 3.75 0 1 0 0-7.5a3.75 3.75 0 0 0 0 7.5M2 12.982C2 11.887 2.887 11 3.982 11h5.6a4.75 4.75 0 0 0 2.294 6H9.483a2.98 2.98 0 0 0-2.758 1.847c-2.005-.371-3.207-1.372-3.894-2.49C2 15.01 2 13.618 2 13.378zM16.123 17h2.395c1.245 0 2.312.763 2.758 1.847c2.005-.371 3.207-1.372 3.894-2.49c.83-1.348.83-2.74.83-2.98v-.395A1.98 1.98 0 0 0 24.018 11h-5.6a4.75 4.75 0 0 1-2.294 6M23.25 5.75a3.75 3.75 0 1 1-7.5 0a3.75 3.75 0 0 1 7.5 0M7.5 19.982C7.5 18.887 8.387 18 9.482 18h9.036c1.095 0 1.982.887 1.982 1.982v.395c0 .24 0 1.632-.83 2.98C18.8 24.773 17.106 26 14 26s-4.8-1.228-5.67-2.642c-.83-1.349-.83-2.74-.83-2.981zM14 16.5A3.75 3.75 0 1 0 14 9a3.75 3.75 0 0 0 0 7.5"/></svg>
+                     Communities</button>
             </div>
             <div class="link">
-                <button class="nav">Settings</button>
-                <button class="nav">Support</button>
-                <button class="nav">Privacy</button>
+                <button class="nav"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 512 512"><path fill="currentColor" d="M352 320c88.4 0 160-71.6 160-160c0-15.3-2.2-30.1-6.2-44.2c-3.1-10.8-16.4-13.2-24.3-5.3l-76.8 76.8c-3 3-7.1 4.7-11.3 4.7H336c-8.8 0-16-7.2-16-16v-57.4c0-4.2 1.7-8.3 4.7-11.3l76.8-76.8c7.9-7.9 5.4-21.2-5.3-24.3C382.1 2.2 367.3 0 352 0c-88.4 0-160 71.6-160 160c0 19.1 3.4 37.5 9.5 54.5L19.9 396.1C7.2 408.8 0 426.1 0 444.1C0 481.6 30.4 512 67.9 512c18 0 35.3-7.2 48-19.9l181.6-181.6c17 6.2 35.4 9.5 54.5 9.5M80 408a24 24 0 1 1 0 48a24 24 0 1 1 0-48"/></svg>
+                     Settings</button>
+                <button class="nav"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2m-7 12h-2v-2h2zm1.8-5c-.3.4-.7.6-1.1.8c-.3.2-.4.3-.5.5c-.2.2-.2.4-.2.7h-2c0-.5.1-.8.3-1.1c.2-.2.6-.5 1.1-.8c.3-.1.5-.3.6-.5s.2-.5.2-.7c0-.3-.1-.5-.3-.7s-.5-.3-.8-.3s-.5.1-.7.2q-.3.15-.3.6h-2c.1-.7.4-1.3.9-1.7s1.2-.5 2.1-.5s1.7.2 2.2.6s.8 1 .8 1.7q.15.6-.3 1.2"/></svg>
+                     Support</button>
+                <button class="nav"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 512 512"><path fill="currentColor" d="m479.07 111.36l-.79-12.53l-12.36-2.21c-86.5-15.52-122.61-26.74-203.33-63.2l-6.59-3l-6.59 3C168.69 69.88 132.58 81.1 46.08 96.62l-12.36 2.21l-.79 12.53c-3.85 61.11 4.36 118.05 24.43 169.24A349.5 349.5 0 0 0 129 393.11c53.47 56.73 110.24 81.37 121.07 85.73l6 2.41l6-2.41c10.83-4.36 67.6-29 121.07-85.73a349.5 349.5 0 0 0 71.5-112.51c20.07-51.19 28.28-108.13 24.43-169.24m-252.91 216L153.37 256l22.4-22.86l48.47 47.49l110.13-127.2l24.2 20.94Z"/></svg>
+                     Privacy</button>
             </div>
         </div>
 
         <div class="main"> 
-            <h1 class="section1">Show Your Work!</h1>
+            <h1 class="section1">Filler Text Corner!</h1>
             <div class="content1" id="con">
-                <h2>Project Idea</h2>
-                <p class="filler">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <h2>Check out the new text!</h2>
+                <p class="filler">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias, reiciendis incidunt voluptatibus aspernatur fugit officia quam neque sapiente adipisci maxime ullam recusandae iure accusantium eius et, a aliquam. Eveniet, consequatur?</p>
+                <div class="icons">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24"><path fill="currentColor" d="M10 19.11L12.11 17H7v-2h7v.12L16.12 13H7v-2h10v1.12l1.24-1.23c.48-.48 1.11-.75 1.8-.75c.33 0 .66.07.96.19V5a2 2 0 0 0-2-2H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h5zM7 7h10v2H7zm14.7 7.35l-1 1l-2.05-2.05l1-1a.55.55 0 0 1 .77 0l1.28 1.28c.21.21.21.56 0 .77M12 19.94l6.06-6.06l2.05 2.05L14.06 22H12z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24"><path fill="currentColor" d="M20 1.999H4c-1.103 0-2 .897-2 2v18l4-4h14c1.103 0 2-.897 2-2v-12c0-1.103-.897-2-2-2m-6 11H7v-2h7zm3-4H7v-2h10z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24"><path fill="currentColor" d="m21 12l-7-7v4C7 10 4 15 3 20c2.5-3.5 6-5.1 11-5.1V19z"/></svg>
+                </div>
             </div>
             <div class="content2" id="con">
-                <h2>Learing to Code</h2>
-                <p class="filler">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <h2>Can't think of what to say?</h2>
+                <p class="filler">Don't worry we can just type some random B.S. down for you. No need to fret when you need just a random wall of text that leads absolutely nowhere at all. Want a running paragraph, but simply can't come up with a few words? Look no further because we have all the text you need.</p>
+                <div class="icons">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24"><path fill="currentColor" d="M10 19.11L12.11 17H7v-2h7v.12L16.12 13H7v-2h10v1.12l1.24-1.23c.48-.48 1.11-.75 1.8-.75c.33 0 .66.07.96.19V5a2 2 0 0 0-2-2H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h5zM7 7h10v2H7zm14.7 7.35l-1 1l-2.05-2.05l1-1a.55.55 0 0 1 .77 0l1.28 1.28c.21.21.21.56 0 .77M12 19.94l6.06-6.06l2.05 2.05L14.06 22H12z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24"><path fill="currentColor" d="M20 1.999H4c-1.103 0-2 .897-2 2v18l4-4h14c1.103 0 2-.897 2-2v-12c0-1.103-.897-2-2-2m-6 11H7v-2h7zm3-4H7v-2h10z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24"><path fill="currentColor" d="m21 12l-7-7v4C7 10 4 15 3 20c2.5-3.5 6-5.1 11-5.1V19z"/></svg>
+                </div>
             </div>
             <div class="content3" id="con">
-                <h2>Nonsense Wording</h2>
-                <p class="filler">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <h2>NO A.I.</h2>
+                <p class="filler">We are strictly against using A.I. to produce filler text. Even if it ends up being more effecient or cheaper, this company will continue to thrive becasue nothing will beat a human touch!</p>
+                <div class="icons">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24"><path fill="currentColor" d="M10 19.11L12.11 17H7v-2h7v.12L16.12 13H7v-2h10v1.12l1.24-1.23c.48-.48 1.11-.75 1.8-.75c.33 0 .66.07.96.19V5a2 2 0 0 0-2-2H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h5zM7 7h10v2H7zm14.7 7.35l-1 1l-2.05-2.05l1-1a.55.55 0 0 1 .77 0l1.28 1.28c.21.21.21.56 0 .77M12 19.94l6.06-6.06l2.05 2.05L14.06 22H12z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24"><path fill="currentColor" d="M20 1.999H4c-1.103 0-2 .897-2 2v18l4-4h14c1.103 0 2-.897 2-2v-12c0-1.103-.897-2-2-2m-6 11H7v-2h7zm3-4H7v-2h10z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24"><path fill="currentColor" d="m21 12l-7-7v4C7 10 4 15 3 20c2.5-3.5 6-5.1 11-5.1V19z"/></svg>
+                </div>
             </div>
             <div class="content4" id="con">
                 <h2>What is Filler Content?</h2>
-                <p class="filler">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p class="filler">This is simply just random thoughts that mostly make-up a cohesevie sentence or thought but often times just lead you back to where you started. </p>
+                <div class="icons">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24"><path fill="currentColor" d="M10 19.11L12.11 17H7v-2h7v.12L16.12 13H7v-2h10v1.12l1.24-1.23c.48-.48 1.11-.75 1.8-.75c.33 0 .66.07.96.19V5a2 2 0 0 0-2-2H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h5zM7 7h10v2H7zm14.7 7.35l-1 1l-2.05-2.05l1-1a.55.55 0 0 1 .77 0l1.28 1.28c.21.21.21.56 0 .77M12 19.94l6.06-6.06l2.05 2.05L14.06 22H12z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24"><path fill="currentColor" d="M20 1.999H4c-1.103 0-2 .897-2 2v18l4-4h14c1.103 0 2-.897 2-2v-12c0-1.103-.897-2-2-2m-6 11H7v-2h7zm3-4H7v-2h10z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24"><path fill="currentColor" d="m21 12l-7-7v4C7 10 4 15 3 20c2.5-3.5 6-5.1 11-5.1V19z"/></svg>
+                </div>
             </div>
             <div class="content5" id="con">
-                <h2>How do Code?</h2>
-                <p class="filler">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <h2>Story Time!</h2>
+                <p class="filler">There once was a man in  a boat all alone in the middle of a lake. The morning air was still, the water was peacefull. He took a deep breath of the fresh air and thought, "There is no way this could be more perfect." He learned forward because he saw something in the water. Some sort of container was floating in the water. He paddles at the water in order to get closer. He picks up the container and hears something inside. After fiddling with the latch a bit he manages to get it open. There was a note that read, "Why are you still reading this paragraph there is no point to this story." The End</p>
+                <div class="icons">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24"><path fill="currentColor" d="M10 19.11L12.11 17H7v-2h7v.12L16.12 13H7v-2h10v1.12l1.24-1.23c.48-.48 1.11-.75 1.8-.75c.33 0 .66.07.96.19V5a2 2 0 0 0-2-2H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h5zM7 7h10v2H7zm14.7 7.35l-1 1l-2.05-2.05l1-1a.55.55 0 0 1 .77 0l1.28 1.28c.21.21.21.56 0 .77M12 19.94l6.06-6.06l2.05 2.05L14.06 22H12z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24"><path fill="currentColor" d="M20 1.999H4c-1.103 0-2 .897-2 2v18l4-4h14c1.103 0 2-.897 2-2v-12c0-1.103-.897-2-2-2m-6 11H7v-2h7zm3-4H7v-2h10z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24"><path fill="currentColor" d="m21 12l-7-7v4C7 10 4 15 3 20c2.5-3.5 6-5.1 11-5.1V19z"/></svg>
+                </div>
             </div>
             <div class="content6" id="con">
                 <h2>No ideas?</h2>
                 <p class="filler">Just throw in some random text or Lorem Ipsum and you're done! </p>
+                <div class="icons">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24"><path fill="currentColor" d="M10 19.11L12.11 17H7v-2h7v.12L16.12 13H7v-2h10v1.12l1.24-1.23c.48-.48 1.11-.75 1.8-.75c.33 0 .66.07.96.19V5a2 2 0 0 0-2-2H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h5zM7 7h10v2H7zm14.7 7.35l-1 1l-2.05-2.05l1-1a.55.55 0 0 1 .77 0l1.28 1.28c.21.21.21.56 0 .77M12 19.94l6.06-6.06l2.05 2.05L14.06 22H12z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24"><path fill="currentColor" d="M20 1.999H4c-1.103 0-2 .897-2 2v18l4-4h14c1.103 0 2-.897 2-2v-12c0-1.103-.897-2-2-2m-6 11H7v-2h7zm3-4H7v-2h10z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24"><path fill="currentColor" d="m21 12l-7-7v4C7 10 4 15 3 20c2.5-3.5 6-5.1 11-5.1V19z"/></svg>
+                </div>
             </div>
             <div class="announcements">
                 <h1 class="section">Announcements</h1>
@@ -85,20 +132,33 @@
             <div class="trending">
                 <h1 class="section">Trending</h1>
                 <div class="acct">
-                    <h3 class="prof">@BushyBoi</h3>
-                    <p class="prof">Justa Shrub</p>
+                    <img class="profile2" src="https://avatars.fastly.steamstatic.com/80065a8bc68955560fa402aa7685463ac634afa6.jpg">
+                    <div class="prof">
+                        <h3>@BushyBoi</h3>
+                        <p>Justa Shrub</p>
+                    </div>                    
                 </div>
                 <div class="acct">
-                    <h3 class="prof">@notaDIV</h3>
-                    <p class="prof">Ima Div</p>
+                    <img class="profile2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEc9A_S6BPxCDRp5WjMFEfXrpCu1ya2OO-Lw&s" >
+                    <div class="prof">
+                        <h3>@notaDIV</h3>
+                        <p>Ima Div</p>
+                    </div>
                 </div>
                 <div class="acct">
-                    <h3 class="prof">@MuscleMan</h3>
-                    <p class="prof">Mitch Sorenstein</p>
+                    <img class="profile2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0RxyKUZtHzPzMbMW7Sy0ot7ZztNvPFoHI5Q&s">
+                    <div class="prof">
+                        <h3>@MuscleMan</h3>
+                        <p>Mitch Sorenstein</p>
+                    </div>
                 </div>
                 <div class="acct">
-                    <h3 class="prof">@PirateKing</h3>
-                    <p class="prof">Monkey D. Luffy</p>
+                    <img class="profile2" src="https://pbs.twimg.com/profile_images/1565724526503424000/TbLcrB1g_400x400.jpg" >
+                    <div class="prof">
+                        <h3>@PirateKing</h3>
+                        <p>Monkey D. Luffy</p>
+                    </div>
+                    
                 </div>
             </div>
         </div>
